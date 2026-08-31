@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ASI/PLFS Microdata Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="asi-dashboard.css" />
+  <style>
+    body { margin: 0; padding: 32px; background: #f3f4f6; font-family: -apple-system, sans-serif; }
+    h1 { font-size: 18px; margin: 0 0 16px; }
+    .host-note { font-size: 13px; color: #6b7280; margin-bottom: 20px; max-width: 640px; }
+    .host-nav { font-size: 13px; margin-bottom: 16px; }
+    .host-nav a { color: #4c72b0; }
+    .site-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #9ca3af; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>ASI/PLFS Microdata Dashboard</h1>
+  <p class="host-note">
+    Explore India's Annual Survey of Industries and Periodic Labour Force
+    Survey microdata — pick a dataset, chart axes, and filters below.
+  </p>
+  <p class="host-nav">
+    <a href="financial-analyzer.html">Financial Analyzer (multi-company, Screener.in) &rarr;</a>
+    <a href="trade-explorer.html">Trade Explorer (UN Comtrade) &rarr;</a>
+  </p>
+
+  <!-- This is the entire integration: one div + one script tag. -->
+  <div data-asi-dashboard></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="asi-dashboard.js"></script>
+
+  <footer class="site-footer">Designed by Arnav Mayur for FED</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: asi-plfs-dashboard
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/metadata
+    envVars:
+      - key: DATA_ARCHIVE_URL
+        sync: false

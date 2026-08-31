@@ -1,0 +1,10 @@
+node_modules/
+data/*.csv
+data/*.txt
+!data/.gitkeep
+data/*.duckdb
+data/*.duckdb.wal
+data/comtrade_country_reference.json
+data/comtrade_hs_reference.json
+*.log
+.DS_Store

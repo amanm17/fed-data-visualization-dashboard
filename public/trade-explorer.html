@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Trade Explorer (UN Comtrade)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="trade-explorer.css" />
+  <style>
+    body { margin: 0; padding: 32px; background: #f3f4f6; font-family: -apple-system, sans-serif; }
+    h1 { font-size: 18px; margin: 0 0 16px; }
+    .host-note { font-size: 13px; color: #6b7280; margin-bottom: 20px; max-width: 640px; }
+    .host-nav { font-size: 13px; margin-bottom: 16px; }
+    .host-nav a { color: #4c72b0; margin-right: 16px; }
+    .site-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #9ca3af; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Trade Explorer (UN Comtrade)</h1>
+  <p class="host-note">
+    Pick reporter/partner countries, HS product codes, and import/export
+    flow, then fetch and chart real UN Comtrade trade data across years.
+    Bring your own free Comtrade API key(s) to fetch new combinations live —
+    without a key, you can still chart anything already in the shared
+    cache below.
+  </p>
+  <p class="host-nav">
+    <a href="demo.html">&larr; ASI/PLFS Microdata Dashboard</a>
+    <a href="financial-analyzer.html">Financial Analyzer &rarr;</a>
+  </p>
+
+  <!-- This is the entire integration: one div + one script tag (plus
+       Chart.js, same as the ASI dashboard and Financial Analyzer). -->
+  <div data-trade-explorer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="trade-explorer.js"></script>
+
+  <footer class="site-footer">Designed by Arnav Mayur for FED</footer>
+</body>
+</html>
